@@ -18,3 +18,7 @@
     }
 }
 ```
+
+## Resources Used - Research
+
+- [CloudFormation Hook 101](https://dev.to/aws-builders/cloudformation-hook-101-3jmj#config)
