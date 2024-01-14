@@ -9,7 +9,7 @@ Resources:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Allow All SSH
-      VpcId: 'vpc-083355efbeef405cf'
+      VpcId: 'REPLACE_ME'
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 22
