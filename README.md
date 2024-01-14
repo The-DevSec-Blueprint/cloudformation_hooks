@@ -1,33 +1,23 @@
 # Stop Your Developers from Creating Noncompliant Resources with AWS CloudFormation Hooks
 
-## Notes to call out
+![]() - Put Video Thumbnail here - make it clickable
 
-1. Hooks have to be activated in each region for your resources. :sad
+Hello everyone! Thanks for checking out this project. If you have any questions, don't hesitate to reach out to me!
 
-## Deploying Template
+## CloudFormation Template Commands
 
-1. aws cloudformation deploy --stack-name <stack_name> --template-file <stackfile_name> 
+In the video, there is one command that I use for deploying the CloudFormation template stack into my AWS account using the AWS CLI. The command is highlighted below:
+```shell
+$ aws cloudformation deploy --stack-name <replace_me> --template-file <replace_me> 
+```
 >**NOTE**: Add -capabilities CAPABILITY_NAMED_IAM for IAM role deployment
-2. aws cloudformation delete-stack --stack-name <name_of_stack>
 
-## Hook Configuration
+To clean up your stack, enter the following command:
 
-```json
-{
-    "CloudFormationConfiguration": {
-        "HookConfiguration": {
-            "TargetStacks":"ALL",
-            "FailureMode":"FAIL"
-        }
-    }
-}
+```shell
+$ aws cloudformation delete-stack --stack-name <name_of_stack>
 ```
 
-## Notes for development purposes
+## CloudFormation Hook Type Configuration
 
-AwsCommunity::EC2::SecurityGroupRestrictedSSH - Remember this!
-
-## Resources Used - Research
-
-- https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html
-- [CloudFormation Hook 101](https://dev.to/aws-builders/cloudformation-hook-101-3jmj#config)
+When you get to the part where you're about to activate the AWSEC2Community
