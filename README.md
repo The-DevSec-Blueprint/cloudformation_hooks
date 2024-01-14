@@ -1,6 +1,8 @@
 # Stop Your Developers from Creating Noncompliant Resources with AWS CloudFormation Hooks
 
-![]() - Put Video Thumbnail here - make it clickable
+![Thumbnail](./docs/images/cloudformation_hooks_thumbnail.svg)
+
+## Introduction
 
 Hello everyone! Thanks for checking out this project. If you have any questions, don't hesitate to reach out to me!
 
@@ -20,4 +22,19 @@ $ aws cloudformation delete-stack --stack-name <name_of_stack>
 
 ## CloudFormation Hook Type Configuration
 
-When you get to the part where you're about to activate the AWSEC2Community
+When you get to the part where you're about to activate the `AwsCommunity::EC2::SecurityGroupRestrictedSSH` hook, you'll want to ensure that the
+configuration schema is set to the following:
+
+#### Figure 1. Configuration Hooks Dashboard
+![Configure Extension Dashboard](./docs/images/configure_extension_dashboard.png)
+
+```json
+{
+    "CloudFormationConfiguration": {
+        "HookConfiguration": {
+            "TargetStacks":"ALL",
+            "FailureMode":"FAIL"
+        }
+    }
+}
+```
