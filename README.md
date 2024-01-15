@@ -1,6 +1,6 @@
 # Stop Your Developers from Creating Noncompliant Resources with AWS CloudFormation Hooks
 
-![Thumbnail](./docs/images/cloudformation_hooks_thumbnail.svg)
+[![Thumbnail](./docs/images/cloudformation_hooks_thumbnail.svg)](https://www.youtube.com/watch?v=IwEUREOS0NA)
 
 ## Introduction
 
